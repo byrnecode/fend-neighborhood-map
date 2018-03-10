@@ -1,0 +1,17 @@
+html,
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  background-color: #fcfcfc; }
+
+header, main, footer {
+  padding-left: 300px; }
+
+@media only screen and (max-width: 992px) {
+  header, main, footer {
+    padding-left: 0; } }
+
+.side-nav__item {
+  padding: 0 1em; }
