@@ -1,3 +1,37 @@
+.side-nav {
+	padding-top: 2em;
+}
+
 .side-nav__item {
 	padding: 0 1em;
+	color: rgba(0,0,0,0.87);
+}
+
+.side-nav__item .card-panel {
+	padding: 1em;
+}
+
+.side-nav li>a {
+	color: #fff;
+}
+
+.side-nav input[type=search]:not(.browser-default) {
+	border-bottom: 1px solid #6a1b9a;
+}
+
+.side-nav .input-field label {
+	color: #6a1b9a;
+}
+
+.side-nav .input-field input[type=search]:focus {
+	color: #6a1b9a;
+}
+
+.side-nav input[type=search]:not(.browser-default):focus:not([readonly]) {
+	border-bottom: 1px solid #6a1b9a;
+  box-shadow: 0 1px 0 0 #6a1b9a;
+}
+
+.side-nav input[type=search]:not(.browser-default):focus:not([readonly])+label {
+  color: #4a148c;
 }

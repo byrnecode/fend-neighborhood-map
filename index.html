@@ -17,28 +17,39 @@
 		<body>
 
 		<header>
-			<!-- <nav> -->
-				<ul id="side-nav" class="side-nav fixed">
+			<nav class="purple darken-4">
+				<a href="#" class="brand-logo center">Neigborhood Map</a>
+
+				<ul id="side-nav" class="side-nav fixed purple darken-3">
 					<li class="side-nav__item">
-						<div class="input-field col s12">
-		          <input id="search" type="search">
-		          <label for="search">Filter location:</label>
-		        </div>
+						<div class="card-panel z-depth-2">
+							<div id="search-wrap" class="input-field col s6">
+			          <input id="search" type="search" data-bind="textInput: filterList, valueUpdate: 'afterkeydown'">
+			          <label for="search">Filter location:</label>
+			        </div> 
+						</div>
 					</li>
-					<li class="side-nav__item">First Location</li>
-					<li class="side-nav__item">Second Location</li>
-					<li class="side-nav__item">Third Location</li>
-					<li class="side-nav__item">Fourth Location</li>
-					<li class="side-nav__item">Fifth Location</li>
+					<li class="side-nav__item">
+						<ul data-bind="foreach: locationsFilter">
+							<li>
+								<a href="#" data-bind="text: title, click: $parent.focusMarker"></a>
+							</li>
+						</ul>
+					</li>
 				</ul>
+
 				<a href="#" data-activates="side-nav" class="button-collapse hide-on-large-only"><i class="material-icons">menu</i></a>
-			<!-- </nav> -->
+			</nav>
 		</header>
 
 		<main>
 			<div class="row">
 				<div class="col s12">
-					<p>Content Map will be here..</p>
+
+					<section id="map" class="map card">
+						<!-- Map -->
+					</section>
+
 				</div>
 			</div>
 		</main>
@@ -47,12 +58,19 @@
 			
 		</footer>
 			
-
+			<!-- Knockout JS -->
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
 			<!--Import jQuery before materialize.js-->
 			<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 			<!-- Import materialize compiled and minified JavaScript -->
 		  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+		  <!-- Locations -->
+		  <script src="_js/locations.js"></script>
+		  <!-- View Model -->
+		  <script src="_js/viewModel.js"></script>
 		  <!-- Main JS -->
 		  <script src="_js/main.js"></script>
+		  <!-- Google Map API -->
+		  <script async defer src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDMd0Lv8GbudaHUZOXC1qONfT4N--X9ZGs&callback=init" onerror="mapError()"></script>
 		</body>
 	</html>
