@@ -1,7 +1,13 @@
 # Bubble Tea Locator in Cebu City
 Instantly locate all the refreshing bubble tea and milk tea store in Cebu City!
 
-[Click here to use the web app](https://byrnecode.github.io/fend-neighborhood-map/index.html)
+## How to Use:
+
+[Click here to use the online version of the app](https://byrnecode.github.io/fend-neighborhood-map/index.html)
+
+## Or Run locally
+- Download zip or clone github repository
+- Open/Run index.html in you browser
 
 ## A Project in the Udacity Frontend Web Developer Nanodegree Program
 This is a single page application featuring a map of a neighborhood you would like to visit. This is an example on how design patterns assist in developing a manageable codebase. Explore how frameworks can decrease the time required developing an application and provide a number of utilities for a developer to use. Finally, implementing third-party APIs that provide valuable data sets that can improve the quality of an application.
