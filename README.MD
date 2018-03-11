@@ -1,5 +1,6 @@
 # Bubble Tea Locator in Cebu City
 Instantly locate all the refreshing bubble tea and milk tea store in Cebu City!
+
 [Click here to use the web app](https://byrnecode.github.io/fend-neighborhood-map/index.html)
 
 ## A Project in the Udacity Frontend Web Developer Nanodegree Program
