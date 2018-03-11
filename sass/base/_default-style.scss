@@ -7,3 +7,11 @@ html,
 body {
 	background-color: #fcfcfc;
 }
+
+nav .brand-logo {
+	font-size: 1rem;
+
+	@media (min-width: 992px) {
+		font-size: 2rem;
+	}
+}
